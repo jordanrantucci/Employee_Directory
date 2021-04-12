@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Wrapper from './components/Wrapper';
+import Main from './components/Main';
+import React, { useEffect, useState } from "react";
 
 function App() {
+  const [initialUsers, updateAvailableUsers] = useState([]);
+  const [usersToRender, updateUsersToRender] = useState([]);
+
+  useEffect(() => {
+    getUsers.then(({ data: { results } }) => updateAvailableUsers(results));
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Wrapper>
+        <Header />
+        <Main users={usersToRender}/>
+      </Wrapper>
     </div>
   );
 }
