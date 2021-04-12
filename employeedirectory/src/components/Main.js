@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const Main = ({ users }) => {
-    const [sortedUsers, updateUsers] = useState([]);
+    const [sortedUsers, updateSortedUsers] = useState([]);
 
     useEffect(() => updateSortedUsers(users), [users]);
 
@@ -28,8 +28,37 @@ const Main = ({ users }) => {
 
                             updateSortedUsers(updateSort)}  
                         }>First Name</th>
+                        <th scope='col'>Last Name</th>
+                        <th scope='col'>Email</th>
+                        <th scope='col'>City</th>
+                        <th scope='col'>State</th>
+                        <th scope='col'>Phone Number</th>
+                        <th scope='col'>Date of Birth</th>
                     </tr>
                 </thead>
+                <tbody>
+                    {sortedUsers.map(
+                        ({
+                            picture: { thumbnail },
+                            name: { first, last },
+                            email,
+                            location: { city, state },
+                            phone,
+                            dob,
+                        }) =>
+                        <tr key = {first, last }>
+                            <td><img src={thumbnail} /></td>
+                            <th>{first}</th>
+                            <td>{last}</td>
+                            <td>{city}</td>
+                            <td>{state}</td>
+                            <td>{phone}</td>
+                            <td>{email}</td>
+                            <td>{dob.date}</td>
+                            <td></td>
+                        </tr>
+                    )}
+                </tbody>
             </table>
         </div>
     )
