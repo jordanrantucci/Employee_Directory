@@ -46,7 +46,7 @@ const Main = ({ users }) => {
                             phone,
                             dob,
                         }) =>
-                        <tr key = {first, last }>
+                        <tr key = { thumbnail }>
                             <td><img src={thumbnail} /></td>
                             <th>{first}</th>
                             <td>{last}</td>
