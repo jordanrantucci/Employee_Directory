@@ -54,7 +54,7 @@ const Main = ({ users }) => {
                 <tbody className="tbody">
                     {sortedUsers.map(
                         ({
-                            picture: { thumbnail },
+                            picture: { large },
                             name: { first, last },
                             email,
                             location: { city, state },
@@ -62,7 +62,7 @@ const Main = ({ users }) => {
                             dob,
                         }) =>
                         <tr>
-                            <td><img src={thumbnail} /></td>
+                            <td><img src={large} /></td>
                             <th>{first}</th>
                             <td>{last}</td>
                             <td>{email}</td>
