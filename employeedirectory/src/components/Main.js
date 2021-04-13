@@ -62,7 +62,7 @@ const Main = ({ users }) => {
                             dob,
                         }) =>
                         <tr>
-                            <td><img src={large} /></td>
+                            <td><img src={large} alt="user_profile"/></td>
                             <th>{first}</th>
                             <td>{last}</td>
                             <td>{email}</td>
