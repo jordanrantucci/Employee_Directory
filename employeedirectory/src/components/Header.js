@@ -12,7 +12,7 @@ const Header = ({ title, directions }) => {
 
 Header.defaultProps = {
     title: "Employee Directory",
-    directions: "Click on the carrots to filter by heading or use the search box to narrow your results."
+    directions: "Click A-Z to Sort First Names Alphabetically. You Can also use the open box to search a first or last name."
 }
 
 Header.propTypes = {

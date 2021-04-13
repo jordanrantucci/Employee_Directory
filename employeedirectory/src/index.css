@@ -18,6 +18,25 @@ code {
   background-color: rgb(17,29,67,255);
   color: rgb(240, 237, 229);
   border-bottom: 5px solid crimson;
-  padding-bottom: 5px;
+  margin-bottom: 1%;
 
+}
+
+.filterinput {
+  margin-bottom: 1%;
+}
+.allTable {
+  width:100%;
+}
+
+.tableRow {
+  background-color: lightblue;
+  color: crimson;
+  font-weight: bold;
+
+}
+
+.tbody {
+  background-color: rgba(60, 212, 93, 0.199);
+  margin-right:2%
 }

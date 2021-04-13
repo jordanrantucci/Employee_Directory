@@ -21,10 +21,10 @@ const Main = ({ users }) => {
 
 
     return (
-        <div>
-            <table className = "table">
+       
+            <table className = "allTable">
                 <thead>
-                    <tr>
+                    <tr className="tableRow">
                         <th scope='col'>Picture</th>
                         <th scope='col' onClick={() => {
                             const usersCopy = [...users];
@@ -42,7 +42,7 @@ const Main = ({ users }) => {
                             });
 
                             updateSortedUsers(updateSort)}  
-                        }>First Name <button onClick={sortNameDescending}>A-Z v</button></th>
+                        }>First Name <button className="btn btn-outline-dark" onClick={sortNameDescending}>A-Z</button></th>
                         <th scope='col'>Last Name</th>
                         <th scope='col'>Email</th>
                         <th scope='col'>City</th>
@@ -51,7 +51,7 @@ const Main = ({ users }) => {
                         <th scope='col'>Date of Birth</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="tbody">
                     {sortedUsers.map(
                         ({
                             picture: { thumbnail },
@@ -75,7 +75,6 @@ const Main = ({ users }) => {
                     )}
                 </tbody>
             </table>
-        </div>
     )
 }
 
