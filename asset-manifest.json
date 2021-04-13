@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/jordanrantucci/Employee_Directory.git/static/css/main.f4e60960.chunk.css",
+    "main.js": "/jordanrantucci/Employee_Directory.git/static/js/main.8f23707d.chunk.js",
+    "main.js.map": "/jordanrantucci/Employee_Directory.git/static/js/main.8f23707d.chunk.js.map",
+    "runtime-main.js": "/jordanrantucci/Employee_Directory.git/static/js/runtime-main.b4a640e3.js",
+    "runtime-main.js.map": "/jordanrantucci/Employee_Directory.git/static/js/runtime-main.b4a640e3.js.map",
+    "static/js/2.2eb1bc83.chunk.js": "/jordanrantucci/Employee_Directory.git/static/js/2.2eb1bc83.chunk.js",
+    "static/js/2.2eb1bc83.chunk.js.map": "/jordanrantucci/Employee_Directory.git/static/js/2.2eb1bc83.chunk.js.map",
+    "index.html": "/jordanrantucci/Employee_Directory.git/index.html",
+    "static/css/main.f4e60960.chunk.css.map": "/jordanrantucci/Employee_Directory.git/static/css/main.f4e60960.chunk.css.map",
+    "static/js/2.2eb1bc83.chunk.js.LICENSE.txt": "/jordanrantucci/Employee_Directory.git/static/js/2.2eb1bc83.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4a640e3.js",
+    "static/js/2.2eb1bc83.chunk.js",
+    "static/css/main.f4e60960.chunk.css",
+    "static/js/main.8f23707d.chunk.js"
+  ]
+}
