@@ -5,13 +5,16 @@ const FilterInput = ({ users, updateUsers }) => {
     
     useEffect(() => {
         const filteredUsers = inputValue === "" ? users : users.filter(
-            ({ name: { first } }) => first.toLowerCase().indexOf(inputValue.toLowerCase()) >=0
+            ({ name: { first } }) => first.toLowerCase().indexOf(inputValue.toLowerCase()) >= 0
         );
+
         updateUsers(filteredUsers);
     }, [inputValue, users])
 
     return (
+        <div>
         <input value={inputValue} onChange={e => updateInput(e.target.value)} />
+        </div>
     )
 }
 

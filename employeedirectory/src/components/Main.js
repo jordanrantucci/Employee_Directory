@@ -5,6 +5,21 @@ const Main = ({ users }) => {
 
     useEffect(() => updateSortedUsers(users), [users]);
 
+    function sortNameDescending() {
+        console.log("clicked")
+        const sorted = users.sort(function(name1, name2){
+            if(name1.name.first < name2.name.first){
+                return -1
+            }
+            if(name1.name.first > name2.name.first){
+                return 1
+            }
+            return 0
+        })
+        updateSortedUsers([...sorted])
+    }
+
+
     return (
         <div>
             <table className = "table">
@@ -27,7 +42,7 @@ const Main = ({ users }) => {
                             });
 
                             updateSortedUsers(updateSort)}  
-                        }>First Name</th>
+                        }>First Name <button onClick={sortNameDescending}>A-Z v</button></th>
                         <th scope='col'>Last Name</th>
                         <th scope='col'>Email</th>
                         <th scope='col'>City</th>
@@ -46,14 +61,14 @@ const Main = ({ users }) => {
                             phone,
                             dob,
                         }) =>
-                        <tr key = { thumbnail }>
+                        <tr>
                             <td><img src={thumbnail} /></td>
                             <th>{first}</th>
                             <td>{last}</td>
+                            <td>{email}</td>
                             <td>{city}</td>
                             <td>{state}</td>
                             <td>{phone}</td>
-                            <td>{email}</td>
                             <td>{dob.date}</td>
                             <td></td>
                         </tr>
