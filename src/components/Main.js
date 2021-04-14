@@ -69,7 +69,7 @@ const Main = ({ users }) => {
                             <td>{city}</td>
                             <td>{state}</td>
                             <td>{phone}</td>
-                            <td>{dob.date}</td>
+                            <td>{dob.date.split("T")[0]}</td>
                             <td></td>
                         </tr>
                     )}
